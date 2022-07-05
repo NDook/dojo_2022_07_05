@@ -23,7 +23,7 @@ function updateScore (array, name, points) {
   })
     //deuxième méthodes
     //array.filter((element) => element.player == name).map((player) => (player.score += points)) 
-    return array;
+  return array;
 }
 
 function podium (scores) {
