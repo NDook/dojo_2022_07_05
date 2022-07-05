@@ -27,9 +27,8 @@ function updateScore (array, name, points) {
 }
 
 function podium (scores) {
-    const triScore = scores.sort((a, b) => b.score - a.score);
-        return triScore.slice(0, 3);
-        
+  const triScore = scores.sort((a, b) => b.score - a.score);
+  return triScore.slice(0, 3);        
 };
 
 
