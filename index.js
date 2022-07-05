@@ -18,7 +18,11 @@ const scores = [
   ];
 
 function updateScore (array, name, points) {
-    array.filter((element) => element.player == name).map((player) => (player.score += points)) 
+  array.map(element => {
+    element.player == name ? element.score += points : "";
+  })
+    //deuxième méthodes
+    //array.filter((element) => element.player == name).map((player) => (player.score += points)) 
     return array;
 }
 
